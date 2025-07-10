@@ -1,0 +1,28 @@
+package kr.or.ddit.vo;
+
+public class Board {
+	private int boNo;
+	private String boTitle;
+	private String boContent;
+	public int getBoNo() {
+		return boNo;
+	}
+	public void setBoNo(int boNo) {
+		this.boNo = boNo;
+	}
+	public String getBoTitle() {
+		return boTitle;
+	}
+	public void setBoTitle(String boTitle) {
+		this.boTitle = boTitle;
+	}
+	public String getBoContent() {
+		return boContent;
+	}
+	public void setBoContent(String boContent) {
+		this.boContent = boContent;
+	} 
+	
+	
+	
+}

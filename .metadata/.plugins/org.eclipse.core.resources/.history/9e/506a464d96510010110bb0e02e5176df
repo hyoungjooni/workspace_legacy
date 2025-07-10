@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- 
+		root-context.xml : 스프링 설정을 위한 파일 
+		
+		스프링 설정이란? 
+		- view와 관련되지 않은 객체를 정의 
+		- Service(비즈니스 로직), DAO(Repository: 저장소), DB 등 비즈니스 로직과 관련된 설정
+		- BasicDataSource dataSource = new BasicDataSource(); 
+		  datasource.setDriverClassName('oracle.jdbc.driver.OracleDriver');
+		  ..... 
+		  
+		  
+		  dataSource : 데이터베이스 접속 정보와 관련된 정보를 설정한다. 
+	
+	 -->
+	 <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+ 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+ 		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+ 		<property name="username" value="ddit" />
+ 		<property name="password" value="javas" />
+	 </bean>
+	 
+	 <!-- 
+		데이터베이스와 연결을 맺고 끊어질 떄까지의 라이프 사이클을 관리해주고 SqlSessionTemplate 객체를 생성한다.
+		1) dataSource
+		2) Mapper XML의 위치 설정
+		3) mybatis 설정 파일 	 
+	 
+	  -->
+	 
+	 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	 	<property name="dataSource" ref="dataSource" />
+	 	<property name="mapperLocations" value="classpath:/sqlmap/**/*_SQL.xml" />
+	 	<property name="configLocation" value="/WEB-INF/mybatisAlias/mybatisAlias.xml" />
+	 </bean>
+	 
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\bin" version="1.8.0_121">
+<bootpath>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\resources.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\rt.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\sunrsasign.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\jsse.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\jce.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\charsets.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\jfr.jar"/>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\A_TeachingMaterial\100.JSP_SPRING\02.SPRING1(STS)\UTIL\JDK1.8\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\B_Util\2.Java\jdk21.0.3_9" version="21.0.3"/>
+</libraryInfos>
